@@ -20,6 +20,9 @@ $.fn.vfnnrw_mapkit = function( options ) {
 				'<div id="geolocate"><i class="fa fa-location-arrow"></i></div>'
 				
 	);
+	
+	$( '.popover-content p' ).css( 'font-size', '10px' );
+	$( '.popover-content p' ).css( 'line-heigt', '14px' );
 
     
     // Quellen laden

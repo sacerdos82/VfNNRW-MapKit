@@ -179,14 +179,13 @@ $.fn.vfnnrw_mapkit = function( options ) {
 					'html': true,
 					'title': 'Linkqualität: ' + linkQuality + '%' ,
 					'content': 	'<p>Linkqualität (RAW): ' + feature.get( 'linkQuality' ) +
-								'<p>Von: <span class="details-trigger" rel="' + feature.get ( 'FromID' ) + '">' + feature.get ( 'FromName' ) + ' (' + feature.get ( 'FromID' ) + ')</span></p>' +
-								'<p>Zu: <span class="details-trigger" rel="' + feature.get ( 'ToID' ) + '">' + feature.get ( 'ToName' ) + ' (' + feature.get ( 'ToID' ) + ')</span></p>' +
+								'<p>Von: ' + feature.get ( 'FromName' ) + ' (' + feature.get ( 'FromID' ) + ')</p>' +
+								'<p>Zu: ' + feature.get ( 'ToName' ) + ' (' + feature.get ( 'ToID' ) + ')</p>' +
 								'<p>Länge: ' + feature.get ( 'lengthInMeters' ) + ' Meter</p>',
 	
 				});
 	
 				$( element ).popover( 'show' );
-				$( '.details-trigger' ).click( function() { showNodeDetails( $( this ).attr( 'rel' ) ); }); 
 				
 			} else {
 			
@@ -212,13 +211,11 @@ $.fn.vfnnrw_mapkit = function( options ) {
 								'<p><b>Verbindungsqualit&auml;t:</b> ' + gatewayQuality + ' %' + uplink + '</p>' +
 								'<p><b>Letzter Gatewaykontakt:</b> ' + feature.get ( 'lastSeen' ) + '</p>' +
 								'<p>vor ' + feature.get ( 'lastSeenDifference' ) + '</p>' +
-								'<p><b>Firmware:</b> ' + feature.get ( 'firmwareBuild' ) + '</p>' +
-								'<p><span class="details-trigger" rel="' + feature.get ( 'id' ) + '">Details</a></p>',
+								'<p><b>Firmware:</b> ' + feature.get ( 'firmwareBuild' ) + '</p>'
 	
 				});
 	
 				$( element ).popover( 'show' );
-				$( '.details-trigger' ).click( function() { showNodeDetails( $( this ).attr( 'rel' ) ); }); 
 			
 			}
 		

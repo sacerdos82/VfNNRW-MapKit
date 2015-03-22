@@ -1,0 +1,27 @@
+.popover-content p {
+	font-size: 10px;
+	line-height: 14px;
+	white-space: nowrap;
+	margin-bottom: 5px;
+}
+
+#geolocate {
+	position: absolute;
+	z-index: 89999;
+	font-size: 16px;
+	padding: 3px 8px;
+	background-color: rgba(220, 0, 104, 0.7);
+	outline: 2px solid rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+	color: #000;
+}
+
+#geolocate {
+	bottom: 10px;
+	left: 10px;
+}
+
+#geolocate:hover {
+	background-color: rgba(220, 0, 104, 0.9);
+	cursor: pointer;
+}
